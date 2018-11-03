@@ -1,0 +1,33 @@
+
+filename : 01-solo-mass-chims
+map      : Swamped Temple (Need parser)
+type     : Ladder 1v1/FFA
+length   : 27 mins
+
+player 1: {
+  heroes : { DK: {
+      level: 6
+      ability: []
+  }}
+  unit-order : [ghoul, cf, ghoul, ghoul, etc]
+  unit-total : { ghoul: 3, cf: 4, etc }
+  building-order : [zig, crypt, graveyard]
+  bulding-total : { zig: 4, crypt: 1, etc }
+  unit-upgrades : { burrow : 1, creature-attack: 3, etc }
+  race : Undead
+  apm : 190.70
+}
+
+player 2: {
+  heroes : { DH: {
+      level: 6
+      ability: []
+  }}
+  unit-order : [ghoul, cf, ghoul, ghoul, etc]
+  unit-total : { ghoul: 3, cf: 4, etc }
+  building-order : [zig, crypt, graveyard]
+  bulding-total : { zig: 4, crypt: 1, etc }
+  unit-upgrades : { burrow : 1, creature-attack: 3, etc }
+  race : NightElf
+  apm : 190.70
+}
