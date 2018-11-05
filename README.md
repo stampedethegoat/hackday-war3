@@ -82,7 +82,7 @@ I then tagged each individual replay with a player-name. Example `player:ben`.
 In this way, in my screenboards I could create Template Variables to see the stats of each player.
 
 ## Moving Forward
-- Save replays into a database automatically
+- Save replays into a database instead of saving it locally
 - Add a section for **Hero Abilities + Levels + Items, Resources (Gold + Wood), Advanced Units**
 
 ## Bugs
