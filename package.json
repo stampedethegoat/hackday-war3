@@ -7,7 +7,7 @@
   "license"     : "ISC",
   "scripts": {
     "test"  : "node ./app/index.js",
-    "start" : "node start ./app/server.js"
+    "start" : "node ./app/server.js"
   },
   "dependencies": {
     "dogapi"  : "2.8.3",
