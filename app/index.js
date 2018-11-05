@@ -66,31 +66,31 @@ let aggregateMetrics = async (gameObj, result) => {
   result = result.concat({
     metric : "war3.orc",
     points : orc,
-    type   : "count",
+    type   : "gauge",
     tags   : [`player:total_orc`]
   },
   {
     metric : "war3.hu",
     points : hu,
-    type   : "count",
+    type   : "gauge",
     tags   : [`player:total_hu`]
   },
   {
     metric : "war3.ud",
     points : ud,
-    type   : "count",
+    type   : "gauge",
     tags   : [`player:total_ud`]
   },
   {
     metric : "war3.ne",
     points : ne,
-    type   : "count",
+    type   : "gauge",
     tags   : [`player:total_ne`]
   },
   {
     metric : "war3.rdm",
     points : rdm,
-    type   : "count",
+    type   : "gauge",
     tags   : [`player:total_rdm`]
   });
 
