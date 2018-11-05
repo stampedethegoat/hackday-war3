@@ -112,8 +112,7 @@ let getReplayData = async () => {
   });
 }
 
-submitMetrics();
 
 module.exports = {
-  getReplayData
+  submitMetrics
 }
