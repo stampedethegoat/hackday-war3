@@ -81,4 +81,3 @@ const goParseBuildings = buildings => {
   return result;
 }
 
-
