@@ -2,13 +2,12 @@ const app  = require('express')()
 const port = process.env.PORT || 3000;
 //const index = require('./index');
 
-app.set('views', './../views')
+//app.set('views', './../views')
+app.set('views', __dirname + '../views');
 app.set('view engine', 'pug')
 
 app.get('/', async (req, res) => {
   console.log(`__dirname`, __dirname);
-  console.dir(config.root);
-  console.dir(path.join(config.root, 'server/views'))
   //let gameObj = await index.getReplayData();
   res.render('index', { title   : 'Hackday' })
 })
