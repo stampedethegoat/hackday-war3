@@ -1,6 +1,6 @@
 ## Warcraft 3 Replay Analysis
 
-Deployed at war3-hackday.herokuapp.com.
+Deployed at war3-hackday.herokuapp.com
 
 ## What is it? 
 As part of my hackday, I created 5 Datadog screenboards for Warcraft 3 Replay Analysis 1v1 Pro Ladder games.  
