@@ -78,7 +78,7 @@ war3.ne.hero.wd
 ```
 
 ## Tags
-I then tagged each individual replay with a player-name. Example `player:ben`.
+I then tagged each individual replay with a player-name. Example `player:ben`.  
 In this way, in my screenboards I could create Template Variables to see the stats of each player.
 
 ## Moving Forward
