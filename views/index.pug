@@ -1,4 +1,40 @@
 html
   head
     title= title
-  body
+    link(href='https://fonts.googleapis.com/css?family=Inconsolata', rel='stylesheet')
+    style.
+      a {
+        color           : white;
+        text-decoration : none;
+      }
+      .container {
+        background-image : linear-gradient(black, #4D4D4D);
+        font-size        : 36px;
+        text-align       : center;
+        font-family      : 'Inconsolata', monospace;
+        text-decoration  : none;
+      }
+      .board {
+        margin : 30px;
+      }
+      img {
+        border-radius: 5px;
+      }
+  body.container
+    h1(style='color: #2F4F4F') Warcraft 3 Replay Analysis
+    div.board
+      a(href='https://p.datadoghq.com/sb/1727bc129-8ccfbfffa5514bab1bb14a9efc5f1f37')
+        img(src='https://github.com/stampedethegoat/hackday-war3/raw/master/images/overview.png', width='60%', height='60%')
+    div.board
+      a(href='https://p.datadoghq.com/sb/1727bc129-8ccfbfffa5514bab1bb14a9efc5f1f37')
+        img(src='https://github.com/stampedethegoat/hackday-war3/raw/master/images/human.png' width="60%" height="60%")
+    div.board
+        a(href='https://p.datadoghq.com/sb/1727bc129-8ccfbfffa5514bab1bb14a9efc5f1f37')
+          img(src='https://github.com/stampedethegoat/hackday-war3/raw/master/images/orc.png' width="60%" height="60%")
+    div.board
+      a(href='https://p.datadoghq.com/sb/1727bc129-8ccfbfffa5514bab1bb14a9efc5f1f37')
+        img(src='https://github.com/stampedethegoat/hackday-war3/raw/master/images/night-elf.png' width="60%" height="60%")
+    div.board
+      a(href='https://p.datadoghq.com/sb/1727bc129-8ccfbfffa5514bab1bb14a9efc5f1f37')
+        img(src='https://github.com/stampedethegoat/hackday-war3/raw/master/images/undead.png' width="60%" height="60%")
+
