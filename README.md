@@ -1,5 +1,7 @@
 ## Warcraft 3 Replay Analysis
 
+Deployed on Heroku at https://war3-hackday.herokuapp.com/
+
 ## What is it? 
 As part of my hackday, I created 5 Datadog screenboards for Warcraft 3 Replay Analysis 1v1 Pro Ladder games.  
 I downloaded my replay packs from https://warcraft3.info/replays and saved them locally into a folder inside my app.
@@ -88,6 +90,7 @@ In this way, in my screenboards I could create Template Variables to see the sta
 ## Moving Forward
 - Save replays into a database instead of saving it locally
 - Add a section for **Hero Abilities + Levels + Items, Resources (Gold + Wood), Advanced Units**
+- Add /post in API to run `node index.js`
 
 ## Bugs
 1) When I downloaded replay packs, certain replays consistently returned this error:
@@ -129,4 +132,4 @@ Troubleshooting how I am submitting these metrics is the way to go from here.
 Hackday time! 
 - [x] Readme Edit with Pictures
 - [ ] Create Trello Card
-- [ ] Front End --> Deploy to Heroku?
+- [x] Deploy to Heroku
