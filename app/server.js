@@ -6,6 +6,7 @@ app.set('views', '../views')
 app.set('view engine', 'pug')
 
 app.get('/', async (req, res) => {
+  console.log(`__dirname`, __dirname);
   //let gameObj = await index.getReplayData();
   res.render('index', { title   : 'Hackday' })
 })
