@@ -17,12 +17,12 @@ I used https://brettlangdon.github.io/node-dogapi/ to gather my metrics.
 
 ## Dependencies
 
-- DogAPI v2.8.3
-- dotenv v6.1.0
-- express v4.16.4
-- nodemon v1.18.4
-- pug v2.0.3
-- w3g v1.0.3
+- DogAPI v2.8.3 --> Send Metrics to Datadog from my Node app
+- dotenv v6.1.0 --> Hide my Application/API keys
+- express v4.16.4 --> Run my server onto Heroku
+- nodemon v1.18.4 --> Automatically restart server whenever there are changes in my code
+- pug v2.0.3 --> Front end HTML template
+- w3g v1.0.3 --> w3g replay parser
 
 ## JSON Items Parsed and sent as Metrics
 I then parsed the replay into JSON objects that I needed including
@@ -123,6 +123,6 @@ Troubleshooting how I am submitting these metrics is the way to go from here.
 ![Undead](images/undead.png)
 
 Hackday time! 
-- [ ] Readme Edit with Pictures
+- [x] Readme Edit with Pictures
 - [ ] Create Trello Card
 - [ ] Front End --> Deploy to Heroku?
