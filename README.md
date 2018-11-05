@@ -6,7 +6,11 @@ I downloaded my replay packs from https://warcraft3.info/replays and saved them 
 
 ## Application
 All of my code is located in the `app/` folder of the repository.   
-I used https://brettlangdon.github.io/node-dogapi/ to gather my metrics.
+I used https://brettlangdon.github.io/node-dogapi/ to gather my metrics.  
+
+These 2 articles helped me in the process:  
+- [How to change the colors of my dashboards? Reverse Color Scheme - Martin Fejoz](https://help.datadoghq.com/hc/en-us/articles/203345119-How-to-change-the-colors-of-my-dashboards-Reverse-Color-Scheme)  
+- [How do I exclude certain tags from a graph or monitor? - Samantha Drago](https://help.datadoghq.com/hc/en-us/articles/204520129-How-do-I-exclude-certain-tags-from-a-graph-or-monitor-)
 
 ## Flow
 [Saved Replays Locally](https://warcraft3.info/replays)   
