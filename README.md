@@ -90,7 +90,6 @@ In this way, in my screenboards I could create Template Variables to see the sta
 ## Moving Forward
 - Save replays into a database instead of saving it locally
 - Add a section for **Hero Abilities + Levels + Items, Resources (Gold + Wood), Advanced Units**
-- Add /post in API to run `node index.js`
 
 ## Bugs
 1) When I downloaded replay packs, certain replays consistently returned this error:
@@ -133,3 +132,4 @@ Hackday time!
 - [x] Readme Edit with Pictures
 - [ ] Create Trello Card
 - [x] Deploy to Heroku
+- [x] Add /post in API to run `node index.js`
