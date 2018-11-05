@@ -2,7 +2,7 @@ const app  = require('express')()
 const port = process.env.PORT || 3000;
 //const index = require('./index');
 
-app.set('views', '../views')
+app.set('views', '../../views')
 app.set('view engine', 'pug')
 
 app.get('/', async (req, res) => {
