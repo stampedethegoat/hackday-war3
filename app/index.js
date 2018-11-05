@@ -1,6 +1,5 @@
 require('dotenv').config()
 const datadog      = require("dogapi");
-const index        = require("./index.js");
 const w3g          = require('w3g');
 const fs           = require('fs');
 const replayParser = require("./parser.js");
@@ -12,14 +11,7 @@ datadog.initialize({
   app_key : process.env.APP_KEY,
 });
 
-let submitMetrics = async () => {
-  let gameObj = await getReplayData();
-  let results = await aggregateMetrics(gameObj, []);
-  datadog.metric.send("war3.total_games", gameObj.length);
-  datadog.metric.send_all(results, (err, res) => console.log(res));
-}
-
-let aggregateMetrics = async (gameObj, result) => {
+const aggregateMetrics = async (gameObj, result) => {
   let orc = hu = ne = rdm = ud = 0;
   for (let j = 0; j < gameObj.length; j++) {
     let players = [gameObj[j].player1, gameObj[j].player2];
@@ -97,7 +89,7 @@ let aggregateMetrics = async (gameObj, result) => {
   return result;
 };
 
-let getReplayData = async () => {
+const getReplayData = async () => {
   return await new Promise((resolve, reject) => {
     let replayData = [];
     fs.readdir(replayFolder, (err, files) => {
@@ -112,7 +104,11 @@ let getReplayData = async () => {
   });
 }
 
-
-module.exports = {
-  submitMetrics
+const submitMetrics = async () => {
+  let gameObj = await getReplayData();
+  let results = await aggregateMetrics(gameObj, []);
+  datadog.metric.send("war3.total_games", gameObj.length);
+  datadog.metric.send_all(results, (err, res) => console.log(res));
 }
+
+module.exports = { submitMetrics }
