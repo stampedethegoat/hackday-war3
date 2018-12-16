@@ -1,6 +1,6 @@
+const port   = process.env.PORT || 80;
 const tracer = require('dd-trace').init()
 const app    = require('express')()
-const port   = process.env.PORT || 80;
 const index  = require('./index');
 
 app.set('views', __dirname + '/../views');
