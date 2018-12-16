@@ -1,22 +1,23 @@
 {
-  "name"        : "war3-hackday",
-  "homepage"    : "https://war3-hackday.herokuapp.com/",
-  "version"     : "1.0.0",
-  "description" : "Just a fun small project",
-  "author"      : "Ben Basuni",
-  "license"     : "ISC",
+  "name": "war3-hackday",
+  "homepage": "https://war3-hackday.herokuapp.com/",
+  "version": "1.0.0",
+  "description": "Just a fun small project",
+  "author": "Ben Basuni",
+  "license": "ISC",
   "scripts": {
-    "test"  : "node ./app/index.js",
-    "start" : "node ./app/server.js"
+    "test": "node ./app/index.js",
+    "start": "node ./app/server.js"
   },
   "dependencies": {
-    "dogapi"  : "2.8.3",
-    "express" : "4.16.4",
-    "pug"     : "2.0.3",
-    "w3g"     : "1.0.3",
-    "dotenv"  : "6.1.0"
+    "dd-trace": "0.7.2",
+    "dogapi": "2.8.3",
+    "dotenv": "6.1.0",
+    "express": "4.16.4",
+    "pug": "2.0.3",
+    "w3g": "1.0.3"
   },
   "devDependencies": {
-    "nodemon" : "1.18.4"
+    "nodemon": "1.18.4"
   }
 }

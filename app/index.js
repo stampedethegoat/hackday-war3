@@ -4,7 +4,7 @@ const w3g          = require('w3g');
 const fs           = require('fs');
 const replayParser = require("./parser.js");
 const raceParser   = require("./raceParser.js");
-const replayFolder = '/Users/ben.basuni/Desktop/war3-hackday/replays';
+const replayFolder = '/Users/ben.basuni/Desktop/ /p/code/war3-hackday/replays';
 
 datadog.initialize({
   api_key : process.env.API_KEY,
@@ -110,5 +110,7 @@ const submitMetrics = async () => {
   datadog.metric.send("war3.total_games", gameObj.length);
   datadog.metric.send_all(results, (err, res) => console.log(res));
 }
+
+submitMetrics();
 
 module.exports = { submitMetrics }
