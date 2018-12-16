@@ -1,6 +1,6 @@
 const tracer = require('dd-trace').init()
 const app    = require('express')()
-const port   = process.env.PORT || 80;
+const port   = process.env.PORT || 3000;
 const index  = require('./index');
 
 app.set('views', __dirname + '/../views');
@@ -13,4 +13,4 @@ app.get('/post', async (req, res) => {
   res.send('POST request sent to Datadog')
 })
 
-app.listen(process.env.PORT, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
