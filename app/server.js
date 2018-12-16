@@ -8,7 +8,7 @@ app.set('view engine', 'pug')
 
 app.get('/', async (req, res) => {
   res.render('index', { title   : 'Hackday' })
-)
+})
 
 app.get('/post', async (req, res) => {
   await index.submitMetrics();
