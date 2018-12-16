@@ -130,6 +130,6 @@ Troubleshooting how I am submitting these metrics is the way to go from here.
 
 Hackday time! 
 - [x] Readme Edit with Pictures
-- [ ] Create Trello Card
+- [x] Create Trello Card
 - [x] Deploy to Heroku
 - [x] Add /post in API to run `node index.js`
