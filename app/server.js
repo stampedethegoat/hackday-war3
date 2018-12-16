@@ -15,4 +15,4 @@ app.get('/post', async (req, res) => {
   res.send('POST request sent to Datadog')
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(process.env.PORT, () => console.log(`Example app listening on port ${port}!`))
